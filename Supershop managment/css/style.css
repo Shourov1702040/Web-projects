@@ -1,0 +1,771 @@
+*{margin:0; padding:0;}
+.color_white{
+	color:#FFF;
+}
+
+@font-face{
+    font-family: 'Balls on the rampage';
+    src: url("../fonts/BALLSONTHERAMPAGE.ttf") format('truetype');
+}
+@font-face{
+    font-family: 'Chisel';
+    src: url("../fonts/CHISEL.TTF") format('truetype');
+}
+@font-face{
+    font-family: 'Calligrapher';
+    src: url("../fonts/CALLB_.TTF") format('truetype');
+}
+@font-face{
+    font-family: 'CityDEEBol';
+    src: url("../fonts/CE10016D.TTF") format('truetype');
+}
+@font-face{
+    font-family: 'Digital-7';
+    src: url("../fonts/digital-7.ttf") format('truetype');
+}
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@       *index page      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+#login-back{
+	width:100%;
+	height:753px;
+	background-image: url('../images/login_bg.jpg');
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+}
+
+#login-back h1{
+	text-align: center;
+    font-family: Chisel;
+    font-weight: bold;
+    font-size: 102px;
+    padding-top: 45px;
+    text-shadow: 0 0 16px #4d92c6;
+}
+
+.login-wrapper{
+	width: 770px;
+    height: auto;
+    padding: 54px 3px 31px 0;
+    background-color: #085166;
+    margin: 48px 0 0 353px;
+    border-radius: 207px 207px 40px 40px;
+}
+
+.login-wrapper h3{
+	text-align: center;
+    display: block;
+    font-family: 'Balls on the rampage';
+    color: #FFF;
+    font-size: 90px;
+    margin: -22px 0 7px 209px;
+}
+
+.log_check_div{
+	    padding: 46px 0 0 93px;
+
+}
+
+.sign_radio {
+    margin: 10px;
+    padding: 2px;
+}
+
+.log_form_div{
+	    padding: 0px 0px 0 32px;
+}
+.login_btn{
+	margin: 2px 0 0 11px;
+    font-size: 19px;
+
+}
+.mar-left{
+	margin-left: 73px;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@       EM home page      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#em_frist_m_div{
+   width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.em-leftSide-div{
+    background-color: #00479F;
+    min-height: 753px;
+    height: auto;
+    margin: 0;
+    padding: 0px 0 0 0px;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    
+}
+
+.em_logo_div{
+    margin: 0;
+
+}
+.em_logo_div img{
+    width: 175px;
+    margin: 32px 0 0 35px;
+}
+.em_logo_div p{
+    color: #FFF;
+    font-family: 'Calligrapher';
+    font-size: 21px;
+    margin: 7px 0 0 36px;
+
+}
+
+.em_sidebar_div{
+    margin: 46px 0 0 0px;
+    height: auto;
+
+}
+
+
+#em_menu{
+    list-style-type: none;
+    margin-top: 50px;
+    padding: 0px 0 0 0px;
+
+}
+
+#em_menu a{
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFF;
+    display: block;
+    padding: 19px 0 21px 30px;
+    font-family: 'Tahoma';
+
+}
+
+
+#em_menu a:hover{
+    text-decoration: none;
+    background-color:#00295b;
+    color:#fff;
+    transition: 0.6s all ease;
+
+}
+
+#bd-left{
+        border-left: 6px solid #97c0e1;
+    background-color: #000e2a;
+}
+
+
+.em-rightSide-div{
+    height: auto;
+    margin: 0 0 0 246px;
+
+}
+
+.em_title_div{
+    height: 70px;
+    padding: 5px 0px 0px 4px;
+}
+
+.em_title_div h3{
+    display: inline;
+    font-family: 'CityDEEBol';
+    font-size: 45px;
+    margin: 0 0 0 8px;
+    float: left;
+        color: #16409f;
+}
+
+.em_title_div img{
+    width: 54px;
+    display: inline;
+    float: right;
+    margin: 0 -7px 0 0px;
+}
+
+.em_intro_div{
+    background-color: #00479F;
+    height: 140px;
+    width: 103%;
+
+}
+
+.intro_p{
+
+}
+
+.intro_p p{
+        color: #FFF;
+    font-size: 28px;
+    margin: 15px 0 0 -12px;
+}
+
+.txt_right{
+    text-align: right;
+}
+
+.txt_left{
+    text-align: left;
+}
+
+.watch_wrapper{
+    margin: 30px 0 0px 0;
+}
+
+#digital_watch{
+    background-color: #111;
+    display: inline;
+    color: #4dd72b;
+    font-family: 'Digital-7';
+    font-weight: bold;
+    font-size: 47px;
+    margin: 0px 0 0 90px;
+    padding: 8px 13px;
+    border-radius: 21px;
+
+}
+
+
+.em_mainBody_div{
+
+}
+
+.em_heading_1{
+    color: #083874;
+    margin: 30px 0 46px 0px;
+    text-align: center;
+}
+
+.em_show_div1{
+        width: 980px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.em_showbox1{
+    width: 300px;
+    height: 150px;
+    background-color: #136E42;
+}
+
+.em_showbox1 h3{
+        color: #FFF;
+    font-size: 33px;
+    margin: 14px 0 0 1px;
+}
+
+.em_showbox1 p{
+        color: #FFF;
+    font-size: 24px;
+    margin: 19px 0 0 27px;
+}
+.em_showbox1 img{
+        width: 118px;
+    float: right;
+    margin: 20px -7px 0px 0;
+}
+
+.em_showbox2{
+    width: 300px;
+    height: 150px;
+    background-color: #FF0000;
+    margin-left: 50px;
+}
+
+.em_showbox2 h3{
+    color: #FFF;
+    font-size: 32px;
+    margin: 14px 0 0 1px;
+}
+
+.em_showbox2 p{
+        color: #FFF;
+    font-size: 24px;
+    margin: 19px 0 0 27px;
+}
+.em_showbox2 img{
+        width: 118px;
+    float: right;
+    margin: 20px -7px 0px 0;
+}
+
+
+.em_showbox3{
+    width: 300px;
+    height: 150px;
+    background-color: #20059f;
+    margin-left: 50px;
+}
+
+.em_showbox3 h3{
+        color: #FFF;
+    font-size: 33px;
+    margin: 14px 0 0 14px;
+}
+
+.em_showbox3 p{
+        color: #FFF;
+    font-size: 38px;
+    margin: 19px 0 0 121px;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@       EM Record book      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+.em_RecordBook_head_1{
+        text-align: center;
+    font-size: 76px;
+    color: #083772;
+    margin: 23px 0 50px 0;
+}
+
+.em_form_label label{
+    font-weight: bold;
+}
+
+.eminput_border{
+    border: 2px solid;
+}
+
+.em_rec_clear_btn{
+        width: 257px;
+    font-size: 21px;
+}
+
+.em_rec_calcu_btn{
+        width: 271px;
+    font-size: 22px;
+    margin: 0 0 0 51px;
+}
+
+.em_rec_purchas_btn{
+    width: 305px;
+    font-size: 37px;
+    float: right;
+    margin: 18px 3px 30px 0px;
+}
+
+.em_record_form{
+        background-image: linear-gradient(to left, #5f7cdf, #f6cfb8);
+    padding-top: 17px;
+    border-radius: 14px;
+}
+
+
+#em_default_table_555{
+    margin-top: 30px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@       EM Stock page      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.prod_table_title{
+    margin: 0 0 0 64px;
+}
+
+.prod_table_title h4{
+    display: inline;
+    float: left;
+    margin: 8px 157px 0 5px;
+    border: 3px solid #0b307c;
+    padding: 0px 4px;
+}
+
+.refresh_btn{
+    width: 247px;
+    margin: 0 164px 0 0;
+}
+
+.center-div{
+    width: 96%;
+    height: auto;
+    background-image: linear-gradient(to bottom, #080d1e, #3b615e);
+    padding: 20px 0 20px 0;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+.center-div table{
+    border-collapse: collapse;
+    background-color: #FFF;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin: auto;
+}
+
+.center-div th,td{
+    border: none;
+    padding: 8px 30px;
+    text-align: left;
+    color: #111;
+}
+
+.center-div th{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 2px solid #242959;
+}
+
+.center-div td{
+    font-size: 14px;
+}
+
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@       EM profile page      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.em_pro_frist_div{
+
+}
+
+.Em_profile_div{
+    background-color: #00479F;
+    margin: 21px 0 0 232px;
+    width: 316px;
+    padding: 20px 0;
+    font-size: 35px;
+    color: #FFF;
+    float: left;
+    border-radius: 30px;
+}
+
+.em_pro_Attribute{
+
+}
+
+.em_pro_value{
+
+}
+
+.em_edit_btn{
+    margin: 290px 0 0 0;
+    width: 100px;
+}
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@       Admin home page      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.show_profit{
+    margin: 28px 153px 12px 114px;
+    padding: 4px 32px;
+    border: 5px solid #4d6572;
+    background-image: linear-gradient(to right, #b9d9a9, #363609);
+ 
+}
+.show_profit_btn{
+    margin: 100px 0 32px 130px;
+    width: 171px;
+    font-size: 25px;
+    background-color: #118618;
+    border: none;
+}
+
+.show_profit_btn:hover{
+    background-color: #10bc1a;
+}
+
+.modal_my_class{
+    background-color:#192c2c;
+}
+
+.sign_radio{
+    display: block;
+}
+
+.date_in1 {
+    width: 139px;
+    display: inline;
+    margin: 79px 8px 0 -21px;
+}
+
+.date_in2 {
+        width: 139px;
+    display: inline;
+    margin: 35px 17px 0 -21px;
+}
+
+.date_in3{
+    width: 139px;
+    display: inline;
+    margin: 34px 8px 0 16px;;
+}
+.date_p10001{
+        margin: 39px 0 0 0;
+}
+
+.profit-calculation{
+        margin: -2px 0 0 168px;
+    padding-top: 6px;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@       Admin sale record page      @@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+.select_all_btn {
+    margin: -8px 57px 0 0;
+    background-color: #ff2424;
+    border: none;
+}
+.select_all_btn:hover{
+    background-color: #b04444;
+    border: none;
+}
+
+
+.sell_table_title{
+    margin: 00 00 0 28px;
+}
+
+.ad_select_up_btn{
+    margin:-8px 0 0 0;
+}
+
+.ad_select_del_btn{
+    margin:-8px 156px 0 90px;
+}
+
+.adrefresh_btn{
+    width: 170px;
+    margin: 0px 168px 0px 0;
+}
+
+.search_box{
+        margin: -8px 0 0 0;
+    border: 2px solid black;
+}
+
+
+.admin_sal_rec_update_div{
+    background-color: #2e0a06;
+    padding: 24px 25px;
+    border-radius: 18px;
+    margin: 19px 19px 40px 19px;
+}
+
+.ad_sal_rec_up_btn{
+    float: right;
+    width: 138px;
+    font-size: 21px;
+    background-color: #f3670b;
+    border: 1px solid #824601;
+}
+
+.ad_sal_rec_up_btn:hover{
+    background-color: #b24903;
+
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@       Admin product page      @@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.ad_category_btn{
+        background-color: #c00;
+    border: 1px solid #e74040;
+}
+
+.ad_category_btn:hover{
+    background-color: #e74040;
+   border: 1px solid #e74040; 
+}
+
+.ad_supplier_btn{
+    background-color: #1a0170;
+    border: 1px solid #3613ae;
+    margin: 0 0 0 116px;
+}
+
+.ad_supplier_btn:hover{
+        background-color: #3613ae;
+    border: 1px solid #3613ae;
+}
+
+.ad_sal_clear_btn{
+    background-color: #473747;
+    border: 1px solid #704170;
+    margin: 0 0 0 55px;
+}
+
+.ad_sal_clear_btn:hover{
+    background-color: #704170;
+    border: 1px solid #704170;
+}
+
+.ad_sal_prod_up_btn{
+    background-color: #d7d702;
+    border: 1px solid #eded69;
+    margin: 0 0 0 180px;
+    width: 134px;
+    color: #111;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.ad_sal_prod_up_btn:hover{
+    background-color: #eded69;
+    border: 1px solid #eded69;
+    color: #111;
+}
+
+.ad_enter_btn{
+    background-color: #017201;
+    border: 1px solid #06a906;
+    margin: 0 0 0 57px;
+    width: 146px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.ad_enter_btn:hover{
+    background-color: #06a906;
+    border: 1px solid #06a906;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@       Admin Employee page      @@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.ad_em_display_btn{
+    margin: -8px 470px 0 0px;
+    background-color: #219521;
+    border: 1px solid green;
+}
+
+.ad_em_display_btn:hover{
+    background-color: green;
+    border: 1px solid green;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@       Admin Finding page      @@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.ad_find_upperbody{
+   background-color: #0d1626;
+    margin: 0px 0 0 20px;
+}
+
+.radio_group_div{
+    padding: 7px 0px 0px 14px;
+    margin: 0px 0 0 10px;
+}
+
+.ad_find_upper_left{
+    margin: 0 0 21px 0;
+}
+
+.radio_group_div h3{
+    color: #b29400;
+}
+.radio_group_div label{
+    font-size: 15px;
+    font-weight: bold;
+    color: #cdfafc;
+}
+
+.text_field_radios{
+    margin: 23px 20px 0 90px;
+}
+
+
+.ad_find_submit_btn{
+    width: 240px;
+    height: 103px;
+    font-size: 52px;
+    font-family: 'Coaster';
+    background-color: #60910a;
+    border: 1px solid green;
+    margin: 40px 0 0 4px;
+}
+
+.ad_find_submit_btn:hover{
+    background-color: #6ea70b;
+    border:1px solid #6ea70b;
+}
+
+.ad_find_text_field{
+    width: 193px;
+    display: inline;
+    float: left;
+    margin: 1px 2px 5px 19px;
+    font-size: 21px;
+    color: #000;
+    text-align: center;
+}
+
+.admin_query_select{
+    margin: 26px 17px 0px 20px;
+    border: 5px solid #FFF;
+    font-size: 19px;
+    width: 835px;
+}
+.ad_find_clear_btn{
+    width: 241px;
+    margin: 43px 0 0 5px;
+    font-size: 18px;
+    background-color: #ce3f0d;
+    font-weight: bold;
+    border: 1px solid #dd4d27;
+}
+.ad_find_clear_btn:hover{
+    background-color: #dd4d27;
+    border: 1px solid #dd4d27;
+}
+
+
+.admin_query_table_div{
+    width: 98%;
+    height: auto;
+    background-image: linear-gradient(to bottom, #080d1e, #2b007e);
+    padding: 20px 0 20px 0;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 30%);
+    margin: 21px 0 40px 23px;
+}
+
+
+.admin_query_table_div table{
+    border-collapse: collapse;
+    background-color: #FFF;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin: auto;
+}
+
+.admin_query_table_div th,td{
+    border: none;
+    padding: 8px 30px;
+    text-align: left;
+    color: #111;
+}
+
+.admin_query_table_div th{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 2px solid #242959;
+}
+
+.admin_query_table_div td{
+    font-size: 14px;
+}
+
