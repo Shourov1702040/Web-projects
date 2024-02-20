@@ -1,0 +1,370 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Nov 14, 2022 at 12:13 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.0.13
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `web_project`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `faq`
+--
+
+CREATE TABLE `faq` (
+  `Email` varchar(50) NOT NULL,
+  `Faq_serial` varchar(100) NOT NULL,
+  `Date` varchar(10) NOT NULL,
+  `Topic` varchar(50) NOT NULL,
+  `faq_Question` text NOT NULL,
+  `Image` blob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `faq`
+--
+
+INSERT INTO `faq` (`Email`, `Faq_serial`, `Date`, `Topic`, `faq_Question`, `Image`) VALUES
+('jack99@gmail.com', '1', '26-12-20', 'Frame works', 'This is demo faq, Serial no 1\r\n\r\na\r\n\r\nThank you', ''),
+('jack99@gmail.com', '1', '26-12-20', 'Mechine learning', 'This is demo faq, Serial no 5\r\n\r\n\r\n.\r\nThank you', 0x53637265656e73686f742028313234292e706e67),
+('jack99@gmail.com', '1', '25-12-20', 'Python', 'Help me to solve,It shows error \r\n\r\ninstalldir=C:xampp\r\nbase_stack_name=XAMPP\r\nbase_stack_key=\r\nbase_stack_version=8.0.0-2\r\nbase_stack_platform=windows-x64\r\n[Apache]\r\napache_server_port=80\r\napache_server_ssl_port=443\r\napache_root_directory=/xampp/apache\r\napache_htdocs_directory=C:xampp/htdocs\r\napache_domainname=127.0.0.1\r\napache_configuration_directory=C:xampp/apache/conf\r\napache_unique_service_name= localhost', 0x53637265656e73686f742028313435292e706e67),
+('jack99@gmail.com', '2', '26-12-20', 'Frame works', 'hjskhfggdshj kjghjsg jg hjag hkasfg hjasgd jhasg hgsa jhgsad hasj? jhsgjagshgdj\r\nasdg? ohsufgsjgfj\r\n\r\n\r\n\r\nsdhfkjshfjksdhjkd.', ''),
+('fara_fera@gmail.com', '2', '28-12-20', 'Mechine learning', 'This is demo faq. \r\n\r\nPlease help me', 0x53637265656e73686f742028313635292e706e67),
+('rakib17@gmail.com', '2', '26-12-20', 'Python', 'This is demo faq, Serial no 2\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nThank you', 0x53637265656e73686f742028313234292e706e67),
+('shourovabc15@gmail.com', '3', '09-03-21', 'Frame works', 'I added this question?', 0x776461736c65642e706e67),
+('rakib17@gmail.com', '3', '26-12-20', 'Python', 'This is demo faq, Serial no 3\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nThank you', 0x53637265656e73686f7420283238292e706e67),
+('admin@gmail.com', '4', '28-03-22', 'Frame works', 'This is my question?', ''),
+('fara_fera@gmail.com', '4', '26-12-20', 'Python', 'One common question arises in mind of most people, especially beginners and newbies,\r\nthat why Python is popular in mainstream despite being slow? or why programmers or\r\ndevelopers don’t care about speed and performance limitations in Python? But\r\nafter all the python is better today?? dsf', 0x53637265656e73686f74202839292e706e67),
+('jack99@gmail.com', '5', '26-12-20', 'Python', 'This is demo faq, Serial no 5\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nThank you', ''),
+('jack99@gmail.com', '6', '26-12-20', 'Python', 'Please help me to find the error, The label is not working properly, here is my code,\r\n\r\n________________________________________________________\r\nfrom tkinter.ttk import *\r\nfrom time import strftime\r\n\r\ndef time():\r\n    string = strftime(\'%I:%M:%S %p\')\r\n    label.config(text=string)\r\n    label.after(1000,time)\r\n\r\nroot = Tk()\r\n\r\nlabel = Label(root,font = \"arial 20 bold\",fg=\'green\')\r\nlabel.pack(pady=20)\r\ntime()\r\n\r\nroot.geometry(\'300x120+400+300\')\r\nroot. mainloop()', 0x53637265656e73686f7420283833292e706e67);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `faq_comment`
+--
+
+CREATE TABLE `faq_comment` (
+  `Email` varchar(50) NOT NULL,
+  `Date` varchar(10) NOT NULL,
+  `Faq_serial` varchar(20) NOT NULL,
+  `Topic` varchar(30) NOT NULL,
+  `faq_ans` text NOT NULL,
+  `id` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `faq_comment`
+--
+
+INSERT INTO `faq_comment` (`Email`, `Date`, `Faq_serial`, `Topic`, `faq_ans`, `id`) VALUES
+('eliza88@gmail.com', '28-12-20', '2', 'Frame works', 'saf', '1'),
+('eliza88@gmail.com', '28-12-20', '2', 'Frame works', '@Eliza  Ibara ', '2'),
+('eliza88@gmail.com', '28-12-20', '2', 'Mechine learning', 'dsgdfg', '1'),
+('admin@gmail.com', '28-03-22', '4', 'Frame works', 'Please help me', '1'),
+('shourovabc15@gmail.com', '30-03-22', '4', 'Frame works', '@Tony  Stark, Have you got it?', '2'),
+('jack99@gmail.com', '26-12-20', '4', 'Python', 'hrth', '1'),
+('jack99@gmail.com', '26-12-20', '4', 'Python', 'This is on 4', '2'),
+('fara_fera@gmail.com', '26-12-20', '4', 'Python', '@Jack Sparrow, Thanks', '3'),
+('jack99@gmail.com', '26-12-20', '5', 'Python', 'This is comment on 5', '1'),
+('jack99@gmail.com', '26-12-20', '5', 'Python', 'cb', '2'),
+('jack99@gmail.com', '26-12-20', '5', 'Python', 'dggddgdggddddddddddddddddddddddddddddddddd', '3'),
+('shourovabc15@gmail.com', '28-12-20', '6', 'Python', 'Change Frist line. Replace \"tkinter.ttk\" with \"tkinter\". ', '1'),
+('jack99@gmail.com', '08-07-21', '6', 'Python', '@Touhid Islam, Thank you.', '2'),
+('shourovabc15@gmail.com', '30-03-22', '6', 'Python', '@Jack Sparrow, do u know?\r\n', '3');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mcq`
+--
+
+CREATE TABLE `mcq` (
+  `Q_no` varchar(50) NOT NULL,
+  `Question` varchar(300) NOT NULL,
+  `Options` varchar(300) NOT NULL,
+  `Answer` varchar(100) NOT NULL,
+  `Serial_no` int(255) NOT NULL,
+  `Page_Name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `mcq`
+--
+
+INSERT INTO `mcq` (`Q_no`, `Question`, `Options`, `Answer`, `Serial_no`, `Page_Name`) VALUES
+('01', 'What symbol is used for line comment in python?', '#@@@//@@@##@@@.', 'a', 1, 'Basic_python'),
+('01', 'Why are local variable names beginning with an underscore discouraged?', 'they confuse the interpreter@@@they are used to indicate global variables@@@they are used to indicate a private variables of a class@@@they slow down execution', 'c', 2, 'Basic_python'),
+('01', 'Why are local variable names beginning with an underscore discouraged?', 'they confuse the interpreter@@@they are used to indicate global variables@@@they are used to indicate a private variables of a class@@@they slow down execution', 'c', 3, 'Basic_python'),
+('01', 'What symbol is used for line comment in python?', '#@@@//@@@##@@@.', 'a', 4, 'Basic_python'),
+('01', 'This is demo question?', 'option A@@@option B@@@option C@@@option D', 'C', 6, 'Basic_python'),
+('02', 'This is test question?', 'option A dfsdfsdf@@@option B@@@option C@@@option D', 'B', 1, 'Advance_python'),
+('02', 'Is Python case sensitive when dealing with identifiers?', 'yes@@@no@@@machine dependent@@@none of the mentioned', 'a', 1, 'Basic_python'),
+('02', 'Which of the following is not a keyword?', 'nonlocal@@@assert@@@pass@@@eval', 'd', 2, 'Basic_python'),
+('02', 'Is Python case sensitive when dealing with identifiers?', 'yes@@@no@@@machine dependent@@@none of the mentioned', 'a', 3, 'Basic_python'),
+('02', 'Which of the following is not a keyword?', 'nonlocal@@@assert@@@pass@@@eval', 'd', 4, 'Basic_python'),
+('03', 'This is test question?', 'option A@@@option B@@@option C@@@option D', 'B', 1, 'Advance_python'),
+('03', 'What is the maximum possible length of an identifier?', '31 characters@@@63 characters@@@79 characters@@@none of the mentioned', 'd', 1, 'Basic_python'),
+('03', 'All keywords in Python are in _________', 'lower case@@@UPPER CASE@@@Capitalized@@@None of the mentioned', 'd', 2, 'Basic_python'),
+('03', 'What is the maximum possible length of an identifier?', '31 characters@@@63 characters@@@79 characters@@@none of the mentioned', 'd', 3, 'Basic_python'),
+('03', 'All keywords in Python are in _________', 'lower case@@@UPPER CASE@@@Capitalized@@@None of the mentioned', 'd', 4, 'Basic_python'),
+('04', 'This is test question?', 'option A@@@option B@@@option C@@@option D', 'B', 1, 'Advance_python'),
+('04', 'Which of the following is invalid?', '_a = 1@@@__a = 1@@@__str__ = 1@@@none of the mentioned', 'd', 1, 'Basic_python'),
+('04', 'Which of the following is true for variable names in Python?', 'all private members must have leading and trailing underscores@@@unlimited length@@@underscore and ampersand are the only two special characters allowed@@@none of the mentioned', 'b', 2, 'Basic_python'),
+('04', 'Which of the following is invalid?', '_a = 1@@@__a = 1@@@__str__ = 1@@@none of the mentioned', 'd', 3, 'Basic_python'),
+('04', 'Which of the following is true for variable names in Python?', 'all private members must have leading and trailing underscores@@@unlimited length@@@underscore and ampersand are the only two special characters allowed@@@none of the mentioned', 'b', 4, 'Basic_python'),
+('05', 'This is test question?', 'option A@@@option B@@@option C@@@option D', 'B', 1, 'Advance_python'),
+('05', 'Which of the following is an invalid variable?', 'my_string_1@@@1st_string@@@foo@@@_', 'b', 1, 'Basic_python'),
+('05', 'Which of the following is an invalid statement?', 'abc = 1,000,000@@@a,b,c = 1000, 2000, 3000@@@a b c = 1000 2000 3000@@@a_b_c = 1,000,000', 'c', 2, 'Basic_python'),
+('05', 'Which of the following is an invalid variable?', 'my_string_1@@@1st_string@@@foo@@@_', 'b', 3, 'Basic_python'),
+('05', 'Which of the following is an invalid statement?', 'abc = 1,000,000@@@a,b,c = 1000, 2000, 3000@@@a b c = 1000 2000 3000@@@a_b_c = 1,000,000', 'c', 4, 'Basic_python');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mcq_resutls`
+--
+
+CREATE TABLE `mcq_resutls` (
+  `T_no` int(255) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Mark` int(255) NOT NULL,
+  `Serial_no` int(255) NOT NULL,
+  `Page_Name` varchar(50) NOT NULL,
+  `Date` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `mcq_resutls`
+--
+
+INSERT INTO `mcq_resutls` (`T_no`, `Email`, `Mark`, `Serial_no`, `Page_Name`, `Date`) VALUES
+(1, 'admin@gmail.com', 3, 1, 'Basic_python', '28-03-22'),
+(1, 'fara_fera@gmail.com', 2, 1, 'Basic_python', '25-12-20'),
+(1, 'jack99@gmail.com', 4, 1, 'Basic_python', '24-12-20'),
+(1, 'jems44@gmail.com', 2, 1, 'Basic_python', '27-12-20'),
+(1, 'rakib17@gmail.com', 1, 2, 'Basic_python', '29-03-21'),
+(1, 'shourovabc15@gmail.com', 2, 1, 'Basic_python', '24-12-20'),
+(2, 'fara_fera@gmail.com', 1, 3, 'Basic_python', '28-12-20'),
+(2, 'jack99@gmail.com', 2, 2, 'Basic_python', '25-12-20'),
+(2, 'shourovabc15@gmail.com', 5, 3, 'Basic_python', '03-01-21'),
+(3, 'jack99@gmail.com', 1, 3, 'Basic_python', '30-12-20'),
+(3, 'shourovabc15@gmail.com', 0, 1, 'Advance_python', '12-07-21'),
+(4, 'shourovabc15@gmail.com', 0, 2, 'Basic_python', '28-01-22');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_account`
+--
+
+CREATE TABLE `user_account` (
+  `FirstName` varchar(50) NOT NULL,
+  `LastName` varchar(50) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Phone` varchar(50) NOT NULL,
+  `Profession` varchar(50) NOT NULL,
+  `Address` varchar(50) NOT NULL,
+  `Gender` varchar(10) NOT NULL,
+  `Interest` varchar(100) NOT NULL,
+  `Image` mediumblob NOT NULL,
+  `Password` varchar(100) NOT NULL,
+  `Notification` varchar(3) NOT NULL,
+  `Role` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user_account`
+--
+
+INSERT INTO `user_account` (`FirstName`, `LastName`, `Email`, `Phone`, `Profession`, `Address`, `Gender`, `Interest`, `Image`, `Password`, `Notification`, `Role`) VALUES
+('Touhid', 'Islam Shourov', 'shourovabc15@gmail.com', '01719410216', 'Student', 'Rajshahi', 'male', 'Web Development, Mechine Learning, Artificial Inteligence', 0x6d322e6a7067, '1234', 'Yes', 'Admin'),
+('Farah Sultana', 'Fera', 'fara_fera@gmail.com', '0174576754', 'Student', 'Dinajpur', 'female', 'Web Development, Game Development', 0x66657261322e6a7067, '1234', 'Yes', 'User'),
+('Tusar', 'SZM', 'abdulmaliktusar@gmail.com', '01766564532', 'Trainer', 'Rajshahi', 'female', 'Web Development, Game Development, Mechine Learning, Artificial Inteligence', 0x53637265656e73686f7420323032322d30322d3132203031313835372e706e67, '1234', 'Yes', 'User'),
+('Md Rakibul', 'Hasan', 'rakib17@gmail.com', '0183567735', 'Student', 'Dhaka', '', 'Game Development', 0x72616b6962756c2e6a7067, '1234', 'Yes', 'Sub Admin'),
+('Jems', 'Smith', 'jems44@gmail.com', '28635672567', 'Employee', 'Rajshahi', 'male', 'Web Development, Game Development, Mechine Learning', 0x53637265656e73686f742028313732292e706e67, '1234', 'Yes', 'User'),
+('Eliza ', 'Ibara', 'eliza88@gmail.com', '667564786757', 'Employee', 'Barishal', 'female', 'Web Development, Mechine Learning, Artificial Inteligence', 0x757365725f332e6a7067, '1234', 'Yes', 'User'),
+('Jack', 'Sparrow', 'jack99@gmail.com', '783567235', 'Others', 'Dhaka', 'male', 'Web Development, Game Development, Mechine Learning', 0x53637265656e73686f742028313639292e706e67, '1234', 'Yes', 'User'),
+('Tony ', 'Stark', 'admin@gmail.com', '88 268756552', 'Others', 'Dhaka', 'male', 'Web Development, Game Development, Mechine Learning', 0x53637265656e73686f742028313733292e706e67, 'admin', 'Yes', 'Admin'),
+('Tyler', 'Aiden', 'Tyleraiden11@gmail.com', '9953627542', 'Trainer', 'Dhaka', 'male', 'Web Development, Game Development, Mechine Learning', 0x75736572342e706e67, '1234', 'Yes', 'User');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `videos`
+--
+
+CREATE TABLE `videos` (
+  `Serial_no` int(255) NOT NULL,
+  `Video_Name` varchar(100) NOT NULL,
+  `Link` varchar(300) NOT NULL,
+  `Code_link` varchar(300) NOT NULL,
+  `PageName` varchar(50) NOT NULL,
+  `Description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `videos`
+--
+
+INSERT INTO `videos` (`Serial_no`, `Video_Name`, `Link`, `Code_link`, `PageName`, `Description`) VALUES
+(1, 'Advance Function Practice in python', 'www.youtube.com/32dsf/1234', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Advance_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(1, 'Welcome To Python Video Series', 'https://www.youtube.com/watch?v=0CW9qOW1rvE&t=5s', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Basic_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(1, 'Image to text extraction with gui', 'https://www.youtube.com/watch?v=5GbYublxOOY&t=13s', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/01.py', 'ML_project', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(1, 'Basic phonebook app by python', 'www.youtube.com/32dsf/1234', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Python_project', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(2, 'Zip function part in python', 'www.youtube.com', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Advance_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(2, 'Introduction to Python', 'https://www.youtube.com/watch?v=pCj0Jr-ktp4', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Basic_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(2, 'Face recognition and attendense app', 'https://www.youtube.com/watch?v=5GbYublxd', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/02.py', 'ML_project', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(3, 'any and all function Python', 'www.youtube.com', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Advance_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(3, 'Python Environment Setup', 'https://youtube.com', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Basic_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(4, 'Advance min() and max() Python', 'www.youtube.com', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Advance_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(4, 'First Python Program', 'https://youtube.com', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Basic_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(5, 'Advance sorted function Python', 'www.youtube.com/jkshfius34h2389hdiaushi@35', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Advance_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(5, 'Backslash characters and comments', 'https://youtube.com', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Basic_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(6, 'Variables and Data Types', 'https://youtube.com', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Basic_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(7, 'Python Basic Numerical Operations', 'https://youtube.com', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Basic_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(8, 'Getting User Input in python', 'https://youtube.com', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Basic_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(9, 'Type Casting in python', 'https://youtube.com', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Basic_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(10, 'Math related Library functions', 'https://youtube.com', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Basic_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.'),
+(11, 'Math related Library functions (2)...', 'https://youtube.com', 'https://github.com/Shourov1702040/hpylearners_Python/blob/main/Basic%20python/MDList%20with%20checkbox%20in%20kivymd%20python.py', 'Basic_python', 'This tutorial has been prepared for the beginners who are willing to learn computer programming but they are unable to learn it due to lack of proper guidance. We are confident that after completing this tutorial, you will be at a level where you can code in C Programming language and will have a basic understanding of Java and Python programming languages as well from where you can continue further.\r\n\r\nIf you are completely new to Computer Programming, then we recommend you to read this tutorial twice or even thrice. First reading will not give you much idea, but during your second reading, you will start grasping most of the concepts and you will enjoy writing computer programs.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `video_comments`
+--
+
+CREATE TABLE `video_comments` (
+  `Date` varchar(15) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Comment` text NOT NULL,
+  `Serial_no` int(255) NOT NULL,
+  `Page_Name` varchar(50) NOT NULL,
+  `id` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `video_comments`
+--
+
+INSERT INTO `video_comments` (`Date`, `Email`, `Comment`, `Serial_no`, `Page_Name`, `id`) VALUES
+('27-12-20', 'rakib17@gmail.com', 'My system variable is already created, but I can not run any python code. please tell me why this happning?', 3, 'Basic_python', 6),
+('29-12-20', 'eliza88@gmail.com', '@Rakibul Hasan, Please check that your directory is correct.', 3, 'Basic_python', 7),
+('09-03-21', 'shourovabc15@gmail.com', 'This is a comment', 1, 'Basic_python', 8),
+('28-01-22', 'shourovabc15@gmail.com', 'This is a comment', 2, 'Basic_python', 19),
+('29-01-22', 'shourovabc15@gmail.com', '', 0, 'Basic_python', 20),
+('30-03-22', 'abdulmaliktusar@gmail.com', 'how are you?', 5, 'Advance_python', 21);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `visitor_query`
+--
+
+CREATE TABLE `visitor_query` (
+  `Name` varchar(100) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Phone` varchar(50) NOT NULL,
+  `Comment` text NOT NULL,
+  `Membership` varchar(10) NOT NULL,
+  `id` int(255) NOT NULL,
+  `replay_status` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `visitor_query`
+--
+
+INSERT INTO `visitor_query` (`Name`, `Email`, `Phone`, `Comment`, `Membership`, `id`, `replay_status`) VALUES
+('Kajal Aggarwal', 'kajalaggarwal35@gmail.com', '+99 567545635', 'Hello, Can I join this site with my google account?', 'No', 1, 'Not Replied'),
+('Sujan Chandra', 'sujan@gmail.com', '', 'Can I be a machine learning expert  from here?', 'No', 2, 'Not Replied');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `faq`
+--
+ALTER TABLE `faq`
+  ADD PRIMARY KEY (`Faq_serial`,`Topic`);
+
+--
+-- Indexes for table `faq_comment`
+--
+ALTER TABLE `faq_comment`
+  ADD PRIMARY KEY (`Faq_serial`,`Topic`,`id`);
+
+--
+-- Indexes for table `mcq`
+--
+ALTER TABLE `mcq`
+  ADD PRIMARY KEY (`Q_no`,`Serial_no`,`Page_Name`);
+
+--
+-- Indexes for table `mcq_resutls`
+--
+ALTER TABLE `mcq_resutls`
+  ADD PRIMARY KEY (`T_no`,`Email`);
+
+--
+-- Indexes for table `user_account`
+--
+ALTER TABLE `user_account`
+  ADD PRIMARY KEY (`Phone`),
+  ADD UNIQUE KEY `Email` (`Email`);
+
+--
+-- Indexes for table `videos`
+--
+ALTER TABLE `videos`
+  ADD PRIMARY KEY (`Serial_no`,`PageName`);
+
+--
+-- Indexes for table `video_comments`
+--
+ALTER TABLE `video_comments`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `visitor_query`
+--
+ALTER TABLE `visitor_query`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `video_comments`
+--
+ALTER TABLE `video_comments`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- AUTO_INCREMENT for table `visitor_query`
+--
+ALTER TABLE `visitor_query`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
